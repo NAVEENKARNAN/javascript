@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>date function assessment</title>
+    </head>
+    <body>
+        <div>
+            <input type="date" id="inp1"/>
+            <input type="button" onclick="check()" id="bt1" value="check"/><br>
+        </div><br><br>
+        <div>
+                <input type="text" id="inp2"/>
+                <input type="text" id="inp3"/>
+        </div>
+
+        <script>
+            function check(){
+                var a=document.getElementById("inp1").value;
+                const d = new Date(a);
+                const d1 = new Date(a)
+                d.setDate(d.getDate()+5);
+                d1.setDate(d1.getDate()-5);
+                var b=document.getElementById("inp2").value=d;
+                var c=document.getElementById("inp3").value=d1;
+            }
+        </script>
+    </body>
+</html>
